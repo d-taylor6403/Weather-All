@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+    --dark-teal: #023047;
+    --aqua: #219EBC;
+    --gold: #FFB703;
+    --goldenrod: #FB8500;
+    --light-blue: #8ECAE6;
+    
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    background:var(--dark-teal);
+    color: var(--light-blue);
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    flex: 1 0 auto;
+}
+
+.btn {
+    background-color: var(--goldenrod);
+    color: var(--dark-teal);
+    height: auto;
+}
