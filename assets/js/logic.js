@@ -24,7 +24,7 @@ function newCity(city) {
     cityEl.setAttribute("class", "btn btn-block");
     cityEl.classList.add("history")
     cityEl.textContent = city;
-    //console.log(history);
+    console.log(history);
 
     //Check history array for existing city. if history array is empty it will create new city without checking.
     //if history arr contains values it will check each to see if it exist. 
