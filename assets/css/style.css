@@ -1,38 +1,76 @@
+:root {
+    --dark-teal: #160f29;
+    --aqua: #246a73;
+    --green: #368f8b;
+    --blush: #ddbea8; /*text coloring*/
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-:root {
-    --dark-teal: #023047;
-    --aqua: #219EBC;
-    --gold: #FFB703;
-    --goldenrod: #FB8500;
-    --light-blue: #8ECAE6;
-    
-}
-
 body{
     display: flex;
     flex-direction: column;
+    background-color: var(--green);
 }
 
 .header{
     background:var(--dark-teal);
-    color: var(--light-blue);
+    color: var(--blush);
     height: 100%;
     width: auto;
     display: flex;
     justify-content: center;
 }
 
-.container {
-    flex: 1 0 auto;
+input{
+    height: 35px;
 }
 
-.btn {
-    background-color: var(--goldenrod);
-    color: var(--dark-teal);
-    height: auto;
+#searchButton {
+    background-color: var(--dark-teal);
+    color: var(--blush);
+    border:none;
+    padding: 6px 12px;
+    border-radius: 15%;
+    
 }
+
+i{
+    color: var(--blush);
+}
+
+#searchButton:hover{
+    background-color: var(--blush);
+    border:none;
+}
+
+#searchButton:focus, #searchButton:active{
+    background-color: var(--dark-teal);
+    color: var(--blush);
+    border:none;
+}
+
+
+#citySearch{
+    border-right-style: solid;
+    border-color: var(--dark-teal);
+    margin-top: 5%;
+    height: 500px;
+
+}
+
+.history {
+    margin-top: 5px;
+    color: var(--blush);
+    background-color: var(--dark-teal);
+}
+
+.history:hover {
+    color: var(--dark-teal);
+    background-color: var(--blush);
+}
+
