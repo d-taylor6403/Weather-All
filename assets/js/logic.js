@@ -62,7 +62,7 @@ $("cityEl").on("click", function() {
 });
 
 function populateWeather(city) {
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`)
+    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`)
         .then(function(response) {
             return response.json();
         })
